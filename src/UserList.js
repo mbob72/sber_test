@@ -7,8 +7,6 @@ export const UserList = () => {
     const [timer, setTimer] = useState('')
     const [currentFetch, setFetch] = useState(null)
 
-    const ref = useRef('mounted')
-    const ifDidMount = ref.current === 'mounted'
     useEffect(() => {
         setFetch(null);
         let controller = null;
@@ -36,7 +34,7 @@ export const UserList = () => {
             }
         }
 
-    }, [ifDidMount])
+    }, [])
     return (
         <div className={'container'}>
         <div className={`timer ${timer}`}>Таймер сработал</div>
