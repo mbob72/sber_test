@@ -40,7 +40,7 @@ export const UserList = () => {
         <div className={`timer ${timer}`}>Таймер сработал</div>
         <div className={`fetch ${currentFetch ? 'fetchFired' : ''}`}>Идет загрузка...</div>
         <ul >{users && users.map(({name, email}, ind) => <li className={'item'} key={ind}>
-            <span>{`Name:: ${name}`}</span><br/>
+            <span>{`Name:: ${name}`}</span>
             <span>{`Email:: ${email}`}</span>
         </li>)}
         </ul>
